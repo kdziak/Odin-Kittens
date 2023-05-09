@@ -1,0 +1,11 @@
+<div id="<%= dom_id kitten %>">
+</div>
+
+
+<% kitten.attributes.each do |attr_name, attr_value| %>
+    <div class= "Kitten">
+      <%= attr_name %> : <%= attr_value%>
+    </div>
+    
+<% end %>
+<%= button_to "Destroy this kitten", @kitten, method: :delete %>
